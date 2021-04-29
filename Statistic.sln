@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatisticUI", "src\web\StatisticUI.csproj", "{97DF452D-0936-464A-B1AB-BCCFF92E35FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7D5B8847-50CC-4ED5-8BDE-D33CF033393A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3FDB91EB-453B-4031-ADF4-9F1861AFE6B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{45D3F069-B7E2-431B-8335-D1D720DBEEDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{BB08D0BA-2F87-42B6-9E68-7906451C0047}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97DF452D-0936-464A-B1AB-BCCFF92E35FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97DF452D-0936-464A-B1AB-BCCFF92E35FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97DF452D-0936-464A-B1AB-BCCFF92E35FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97DF452D-0936-464A-B1AB-BCCFF92E35FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97DF452D-0936-464A-B1AB-BCCFF92E35FD} = {7D5B8847-50CC-4ED5-8BDE-D33CF033393A}
+		{45D3F069-B7E2-431B-8335-D1D720DBEEDD} = {7D5B8847-50CC-4ED5-8BDE-D33CF033393A}
+		{BB08D0BA-2F87-42B6-9E68-7906451C0047} = {7D5B8847-50CC-4ED5-8BDE-D33CF033393A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BCECA7D-DE37-4A8C-8333-6A6DD4E89FC8}
+	EndGlobalSection
+EndGlobal

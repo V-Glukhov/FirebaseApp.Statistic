@@ -1,0 +1,25 @@
+﻿@model RegistrationsViewModel
+@{
+    ViewData["Title"] = "Отображение списка всех зарегистрированных в системе версий мобильного приложения";
+}
+
+<div class="text-center">
+    <h1 class="text-info">Отображение списка всех зарегистрированных в системе версий мобильного приложения</h1>
+</div>
+
+<table>
+    @foreach (var version in Model.Versions)
+    {
+    <tr>
+        <td>
+            <p>Version: @(version.Version)</p>
+        </td>
+        <td>
+            <p>RegistrationCount: @(version.RegistrationCount)</p>
+        </td>
+        <td>
+            <p>UniquePhonesNumbers: @(version.UniquePhonesNumbers)</p>
+        </td>
+    </tr>
+    }
+</table>
