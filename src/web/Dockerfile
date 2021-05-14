@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Statistic/Statistic.csproj", "Statistic/"]
-RUN dotnet restore "Statistic/Statistic.csproj"
+COPY ["src/web/StatisticUI.csproj", "src/web/"]
+RUN dotnet restore "src/web/StatisticUI.csproj"
 COPY . .
-WORKDIR "/src/Statistic"
-RUN dotnet build "Statistic.csproj" -c Release -o /app/build
+WORKDIR "/src/src/web"
+RUN dotnet build "StatisticUI.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Statistic.csproj" -c Release -o /app/publish
+RUN dotnet publish "StatisticUI.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Statistic.dll"]
+ENTRYPOINT ["dotnet", "StatisticUI.dll"]
