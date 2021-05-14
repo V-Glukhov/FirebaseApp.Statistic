@@ -1,0 +1,2 @@
+Для сборки проекта скомпилировать проект StatisticUI и собрать его docker-файл. Использовать visual-studio
+или в папке Statistic запустить команду  docker build  -f src/web/Dockerfile  .
